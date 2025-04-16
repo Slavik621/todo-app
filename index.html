@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-DO List</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>My workday</h1>
+      <div class="list-controls">
+        <select id="list-select"></select>
+        <input type="text" id="list-name" placeholder="List Name" />
+        <button id="new-list">New List</button>
+        <button id="delete-list">🗑️</button>
+      </div>
+
+      <div class="todo-section">
+        <label for="new-task" class="visually-hidden">To Do </label>
+        <input type="text" id="new-task" placeholder="To Do Items" />
+        <button id="add-task">+</button>
+      </div>
+      <ul id="task-list"></ul>
+      <div class="filter-controls">
+        <button data-filter="all" class="filter-btn active">All</button>
+        <button data-filter="done" class="filter-btn">Done</button>
+        <button data-filter="not-done" class="filter-btn">Not Done</button>
+      </div>
+      <div class="theme-toggle">
+        <label>
+          <input type="checkbox" id="theme-switch" />
+          Dark Mode
+        </label>
+      </div>
+    </div>
+
+    <script src="/main.js"></script>
+  </body>
+</html>

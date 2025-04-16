@@ -1,0 +1,116 @@
+:root {
+    --bg-color: #f0f0f0;
+    --text-color: #000;
+    --container-bg: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    padding: 40px;
+  }
+  
+  .container {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .list-controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input, select, button {
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  .todo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  #task-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+  }
+  
+  .task input[type="checkbox"] {
+    margin-right: 10px;
+  }
+
+  #new-task {
+    flex: 0;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  #add-task {
+    padding: 8px 14px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .filter-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  
+  .filter-btn {
+    padding: 6px 12px;
+    border: none;
+    background: #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .filter-btn.active {
+    background: #333;
+    color: white;
+  }
+  
+  body.dark-theme {
+    --bg-color: #121212;
+    --text-color: #fff;
+    --container-bg: #1e1e1e;
+  }
+  
+  body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    padding: 40px;
+  }
+  
+  .container {
+    background: var(--container-bg);
+    color: var(--text-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
